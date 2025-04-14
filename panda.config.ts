@@ -1,16 +1,16 @@
 import { defineConfig } from "@pandacss/dev";
-import { 
-  colors, 
-  radius, 
-  fontSizes, 
-  semanticTokens, 
-  spacing, 
-  sizes 
+import {
+  colors,
+  radius,
+  fontSizes,
+  semanticTokens,
+  spacing,
+  sizes
 } from "./src/tokens";
 
 export default defineConfig({
   preflight: true,
-  include: ["./src/**/*.{js,jsx,ts,tsx,vue}", "./pages/**/*.{js,jsx,ts,tsx}"],
+  include: ["./src/**/*.{js,jsx,ts,tsx,vue}", "./pages/**/*.{js,jsx,ts,tsx}", "./stories/**/*.{js,jsx,ts,tsx}"],
   exclude: [],
   theme: {
     tokens: {
@@ -35,8 +35,8 @@ export default defineConfig({
       colors: {
         ...semanticTokens,
       }
+
     },
-    
   },
   outdir: "styled-system",
 });

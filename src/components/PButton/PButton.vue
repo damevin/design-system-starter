@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { buttonStyle } from './PButton.recipe'
-import { type Sizes} from '../../types/sizes.types'
+/* refactor this.. */
+import { type Sizes } from '../../types/sizes.types'
 import { type Colors } from '../../types/colors.types'
+import { type PButtonVariant } from './PButton.types'
 
-type PButtonVariant = 'cta' | 'cta-alpha' | 'secondary'| 'tertiary'
 
 interface PButtonProps {
   color: Colors
@@ -15,6 +16,8 @@ interface PButtonProps {
   iconRight?: string
   iconLeft?: string
   label?: string
+  /*  */
+  dataTestId?: string
 }
 
 
@@ -35,12 +38,15 @@ const props = withDefaults(
 
 <template>
   <button 
-    :class="buttonStyle({
-      variant: props.variant,
-      size: props.size
-    })">
+  :data-testid="dataTestId" 
+  :class="buttonStyle({
+    variant: props.variant,
+    size: props.size,
+    color: props.color
+  })">
     <slot name="iconRight" />
-    <slot default></slot>
+    <slot v-if="$slots.default" default></slot>
+    <span v-else>{{ label }}</span>
     <slot name="iconLeft" />
   </button>
 </template>

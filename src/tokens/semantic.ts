@@ -90,6 +90,158 @@ export const semantic = defineSemanticTokens.colors({
       }
 
     },
+    danger: {
+      pressedOverlay: {
+        value: {
+          base: '{colors.red.alphaDark300}',
+          _dark: '{colors.red.alphaLight300}'
+        }
+      },
+      hoverOverlay: {
+        value: {
+          base: '{colors.red.alphaDark200}',
+          _dark: '{colors.red.alphaLight200}'
+        }
+      },
+      activeOverlay: {
+        value: {
+          base: '{colors.red.alphaDark400}',
+          _dark: '{colors.red.alphaLight400}'
+        }
+      },
+      idle: {
+        value: {
+          base: '{colors.red.500}',
+          _dark: '{colors.red.400}'
+        }
+      },
+      idleAlphaStrong: {
+        value: {
+          base: '{colors.red.alphaDark800}',
+          _dark: '{colors.red.alphaLight800}'
+        }
+      },
+      idleAlphaLight: {
+        value: {
+          base: '{colors.red.alphaDark200}',
+          _dark: '{colors.red.alphaLight200}'
+        }
+      }
+    },
+    warning: {
+      pressedOverlay: {
+        value: {
+          base: '{colors.orange.alphaDark300}',
+          _dark: '{colors.orange.alphaLight300}'
+        }
+      },
+      hoverOverlay: {
+        value: {
+          base: '{colors.orange.alphaDark200}',
+          _dark: '{colors.orange.alphaLight200}'
+        }
+      },
+      activeOverlay: {
+        value: {
+          base: '{colors.orange.alphaDark400}',
+          _dark: '{colors.orange.alphaLight400}'
+        }
+      },
+      idle: {
+        value: {
+          base: '{colors.orange.500}',
+          _dark: '{colors.orange.400}'
+        }
+      },
+      idleAlphaStrong: {
+        value: {
+          base: '{colors.orange.alphaDark800}',
+          _dark: '{colors.orange.alphaLight800}'
+        }
+      },
+      idleAlphaLight: {
+        value: {
+          base: '{colors.orange.alphaDark200}',
+          _dark: '{colors.orange.alphaLight200}'
+        }
+      }
+    },
+    success: {
+      pressedOverlay: {
+        value: {
+          base: '{colors.green.alphaDark300}',
+          _dark: '{colors.green.alphaLight300}'
+        }
+      },
+      hoverOverlay: {
+        value: {
+          base: '{colors.green.alphaDark200}',
+          _dark: '{colors.green.alphaLight200}'
+        }
+      },
+      activeOverlay: {
+        value: {
+          base: '{colors.green.alphaDark400}',
+          _dark: '{colors.green.alphaLight400}'
+        }
+      },
+      idle: {
+        value: {
+          base: '{colors.green.500}',
+          _dark: '{colors.green.400}'
+        }
+      },
+      idleAlphaStrong: {
+        value: {
+          base: '{colors.green.alphaDark800}',
+          _dark: '{colors.green.alphaLight800}'
+        }
+      },
+      idleAlphaLight: {
+        value: {
+          base: '{colors.green.alphaDark200}',
+          _dark: '{colors.green.alphaLight200}'
+        }
+      }
+    },
+    neutral: {
+      pressedOverlay: {
+        value: {
+          base: '{colors.neutral.alphaDark200}',
+          _dark: '{colors.neutral.alphaLight300}'
+        }
+      },
+      hoverOverlay: {
+        value: {
+          base: '{colors.neutral.alphaDark100}',
+          _dark: '{colors.neutral.alphaLight200}'
+        }
+      },
+      activeOverlay: {
+        value: {
+          base: '{colors.neutral.alphaDark300}',
+          _dark: '{colors.neutral.alphaLight400}'
+        }
+      },
+      idle: {
+        value: {
+          base: '{colors.neutral.900}',
+          _dark: '{colors.neutral.100}'
+        }
+      },
+      idleAlphaStrong: {
+        value: {
+          base: '{colors.neutral.alphaDark700}',
+          _dark: '{colors.neutral.alphaLight700}'
+        }
+      },
+      idleAlphaLight: {
+        value: {
+          base: '{colors.neutral.alphaDark100}',
+          _dark: '{colors.neutral.alphaLight200}'
+        }
+      }
+    },
     neutralComplementary: {
       pressedOverlay: {
         value: {
